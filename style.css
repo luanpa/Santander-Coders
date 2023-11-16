@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    font-size: 62.5%;
+    --default-border: 0.1rem solid rgb(0, 0, 0, 0.15);
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+.content{
+    display: grid;
+    grid-template-areas: 
+       ". . ."
+       "hero . form "
+       "hero . form "
+       ". . ."
+    ;
+    gap: 8rem;
+}
+
+main {
+    grid-area: form;
+}
+
+aside{
+    grid-area: hero;
+}
+
+aside img{
+    width: 600px;
+    
+}
+
+aside h1 {
+     font-size: 64px;
+     font-weight: 500;
+     line-height: 75px;
+}
+
+aside h1 span, main h2 span, i {
+    color: #BA68C8;
+
+}
+
+main {
+    width: 60rem;
+    height: 52rem;
+    border: var(--default-border);
+    padding: 4.4rem 5.7rem;
+    border-radius: 1.2rem;
+}
+
+main h2 {
+    max-width: 43rem;
+    font-size: 3.6rem;
+}
+
+main .action{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main .action a {
+    text-decoration: none;
+    border-radius: 1.2rem;
+    height: 5.5rem;
+    font-size: 2.4rem;
+    background-color: aqua;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.4rem;
+    
+
+}
+
+main .action a + a {
+    background-color: #BA68C8;
+    margin-top: 4.8rem;
+    
+}
+
+main footer p {
+       font-size: 1.6rem;
+       margin-top: 8rem;
+}
+
+main footer a {
+   margin-top: 1rem;
+   font-size: 1.8rem;
+   display: block;
+}
+
+
+
+main form input, main form select {
+    width: 500px;
+    height: 5.5rem;
+
+    background: #ffff;
+    border: var(--default-border);
+    border-radius: 1.2rem;
+}
+
+main i {
+    cursor: pointer;
+}
